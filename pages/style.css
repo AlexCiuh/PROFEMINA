@@ -8,7 +8,7 @@
 .banner {
   width: 100%;
   height: 160vh;
-  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../images/IMG-7516062d0682f49db0e78a47630ae593-V.webp);
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../images/back.jpg);
   background-size: cover;
   background-position: center;
 
@@ -1383,7 +1383,7 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.726); /* Добавленная тень *
       .banner {
 width: 100%;
 height: 190vh;
-background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(./images/IMG-7516062d0682f49db0e78a47630ae593-V.webp);
+background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(./back);
 background-size: cover;
 background-position: center;
 
@@ -1974,7 +1974,7 @@ body {
   width: 100%;
   height: 190vh;
   background-image: 
-    url(../images/IMG-7516062d0682f49db0e78a47630ae593-V.webp);
+    url(../images/back.jpg);
   background-size: cover;
   background-position: center;
   position: relative;

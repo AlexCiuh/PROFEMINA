@@ -8,7 +8,7 @@
 .banner {
   width: 100%;
   height: 160vh;
-  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../images/IMG-7516062d0682f49db0e78a47630ae593-V.webp);
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../images/back.jpg);
   background-size: cover;
   background-position: center;
 
@@ -1034,7 +1034,7 @@ background-color: #111111e8;
   }
   
   .landing_page {
-    min-height: 850vh; /* Adjust the min-height as needed */
+    min-height: 760vh; /* Adjust the min-height as needed */
   }
   .footer {
     position: relative; /* Change to relative */
@@ -1190,7 +1190,7 @@ background-color: #111111e8;
 }
 .form-box {
   position: absolute;
-  top: 400vh; /* Измените это значение на ваше усмотрение */
+  top: 340vh; /* Измените это значение на ваше усмотрение */
   left: 50%;
   transform: translate(-50%, -50%);
   min-width: 150vh;
@@ -1942,7 +1942,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  top:630vh;
+  top:540vh;
 }
 body {
   margin: 0;
@@ -1963,7 +1963,7 @@ body {
   width: 100%;
 
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-    url(../images/IMG-7516062d0682f49db0e78a47630ae593-V.webp);
+    url(../images/back.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -1972,7 +1972,7 @@ body {
   width: 100%;
   height: 190vh;
   background-image: 
-    url(../images/IMG-7516062d0682f49db0e78a47630ae593-V.webp);
+    url(../images/back.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
