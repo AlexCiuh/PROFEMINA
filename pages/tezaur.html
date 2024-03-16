@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/contacte.css">
+    <link rel="stylesheet" href="../css/tezaur.css">
     <link rel="icon" href="../images/bar.png" />
     <title>PRO FEMINA</title>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <style>
-        /* mobile style */
+        /* Stil pentru ecranele mici */
+
         @media screen and (max-width: 767px) {
             @keyframes fadeInFromTop {
                 from {
@@ -35,7 +36,8 @@
                 background-color: #3333331c;
                 z-index: 1000;
                 animation: fadeInFromTop 0.5s ease-out;
-                display: none; /* meniu */
+                display: none;
+                /* Meniu */
             }
 
             .navbar ul.show {
@@ -52,7 +54,7 @@
             font-family: "Poppins", sans-serif;
         }
 
-        /* stil gps */
+        /* Stil pentru bara de navigație */
         .navbar {
             position: absolute;
             top: 0;
@@ -62,7 +64,8 @@
             justify-content: space-between;
             align-items: center;
             padding: 15px;
-            opacity: 0; /* opacitatea */
+            opacity: 0;
+            /* Opacitatea */
             animation: fadeInDown 1.5s ease-out forwards;
         }
 
@@ -86,7 +89,7 @@
             text-transform: uppercase;
         }
 
-        /* stil pk */
+        /* Stil pentru ecranele mari (minim 768px) */
         @media screen and (min-width: 768px) {
             .burger-menu {
                 display: none;
@@ -97,7 +100,7 @@
             }
         }
 
-        /* mobil 767 px */
+        /* Stil pentru ecranele mici (maxim 767px) */
         @media screen and (max-width: 767px) {
             .navbar ul {
                 display: none;
@@ -108,6 +111,18 @@
                 width: 100%;
                 background-color: #33333383;
                 z-index: 1000;
+            }
+
+            .footer {
+                background-color: #db0e0e;
+                color: #fff;
+                padding: 20px 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-shrink: 0;
+                /* Prevenirea comprimării footer-ului când conținutul crește */
+            
             }
 
             .navbar ul.show {
@@ -133,17 +148,17 @@
             .banner {
                 width: 100%;
                 height: 250vh;
-                background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-                    url(../images/IMG-7516062d0682f49db0e78a47630ae593-V.webp);
+                background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../images/back.jpg);
                 background-size: cover;
                 background-position: center;
             }
         }
 
-        /* banner */
+        /* Stil pentru banner */
         .banner {
             position: relative;
-            opacity: 0; /* opacitatea */
+            opacity: 0;
+            /* Opacitatea */
             animation: fadeInUp 1.5s ease-out forwards;
         }
 
@@ -177,12 +192,7 @@
             line-height: 25px;
         }
 
-        /* footer */
-        .footer {
-            opacity: 0;
-            animation: fadeInUp 1.5s ease-out forwards;
-            animation-delay: 1s;
-        }
+        /* Stil pentru footer */
 
         @keyframes fadeInUp {
             from {
@@ -230,29 +240,49 @@
         #iq5bf {
             display: none;
         }
-        .banner {
-    width: 100%;
-    height: 160vh;
-    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../images/back.jpg);
-    background-size: cover;
-    background-position: center;
-  
-  }
+
+        /* Adăugați aceste stiluri pentru imagini */
+        .images-container img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .image-left,
+        .image-right {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .image-left:hover,
+        .image-right:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .table1 img,
+        .image-container1 {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .table1 {
+            max-width: 100%;
+            overflow-x: auto;
+        }
     </style>
 </head>
 
 <body>
-
     <div class="banner">
         <div class="navbar">
             <div id="results"></div>
             <img src="../images/logo.png" class="logo">
             <ul>
-                <li><a href="../index.html">ACASĂ</a></li>
+                <li><a href="../index.html">ACASA</a></li>
                 <li><a href="../index.html">DESPRE</a></li>
                 <li><a href="proiecte.html">PROIECTE</a></li>
-                <li><a href="tezaur.html">Tezaur cultural</a></li>
-                <li><a href="#">CONTACTE</a></li>
+                <li><a href="#">Tezaur cultural</a></li>
+                <li><a href="contacte.html">CONTACTE</a></li>
             </ul>
             <!-- Pictograma pentru meniul Burger -->
             <div class="burger-menu" onclick="toggleMenu()">
@@ -261,86 +291,66 @@
                 <div class="bar"></div>
             </div>
         </div>
-
+</div>
         <div class="landing_page">
             <div class="responsive-container-block big-container">
                 <img class="bg-img">
                 <div class="responsive-container-block container">
-                    <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12 left-one">
+                    <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12 left-one bgcul">
                         <div class="form-box">
-                            <p class="text-blk section-head">
-                                Contacte
-                            </p>
-                            <p class="text-blk section-subhead">
-                                S.Fîrladeni, R.Căușeni
-                            </p>
-                            <p class="text-blk section-subhead">
-                                +373 683618936
-                            </p>
-                            <p class="text-blk section-subhead">
-                                profeminafirladeni@gmail.com
-                            </p>
-                            <iframe class="location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2731.9127432630166!2d29.36919518591385!3d46.786323711762414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c907cebde29e27%3A0x7d1dc31392c1c6cf!2sPrimaria!5e0!3m2!1sru!2s!4v1710601895102!5m2!1sru!2s" width="300" height="300"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            <div class="icons-container">
-                                <ul class="social-icon">
-                                    <li class="social-icon__item"><a class="social-icon__link" href="#"><ion-icon
-                                                name="logo-facebook"></ion-icon></a></li>
-                                    <li class="social-icon__item"><a class="social-icon__link" href="#"><ion-icon
-                                                name="logo-twitter"></ion-icon></a></li>
-                                    <li class="social-icon__item"><a class="social-icon__link" href="#"><ion-icon
-                                                name="logo-linkedin"></ion-icon></a></li>
-                                    <li class="social-icon__item"><a class="social-icon__link" href="#"><ion-icon
-                                                name="logo-instagram"></ion-icon></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6 right-one" id="i1zj">
-                        <form class="form-box" id="myForm">
-                            <div class="container-block form-wrapper">
-                                <p class="text-blk contactus-head">
-                                    <a class="link" href=""></a>
-                                    Mesaj
-                                </p>
-                                <p class="text-blk contactus-subhead">
-                                    Mesaj către asociația PRO FEMINA
-                                </p>
-                                <div class="responsive-container-block">
-                                    <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12"
-                                        id="i10mt-7">
-                                        <input class="input" id="ijowk-7" name="Numele" placeholder="Numele">
-                                    </div>
-                                    <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12"
-                                        id="i1ro7">
-                                        <input class="input" id="indfi-5" name="Prenumele" placeholder="Prenumele">
-                                    </div>
-                                    <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-6 wk-ipadp-6 email"
-                                        id="ityct">
-                                        <input class="input" id="ipmgh-7" name="Email" placeholder="Email">
-                                    </div>
-                                    <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
-                                        <input class="input" id="imgis-6" name="Numarul de telefon"
-                                            placeholder="Numărul de telefon">
-                                    </div>
-                                    <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12"
-                                        id="i634i-7">
-                                        <textarea placeholder="Mesajul" class="textinput" id="i5vyy-7"></textarea>
+                            <section>
+                                <div class="loc">
+                                    <h1 class="centered-texts">Ansamblul folcloric "Datina"</h1>
+                                    <p>
+                                    <h3 class="centered-textsss">Conducător: Cucovici Antonina </h3>
+                                    <h3 class="centered-textsss">Acompaniment: Ceban Larisa</h3>
+                                    <h3 class="centered-textsss">Colectivul ansamblului folcloric „DATINA” a fost
+                                        înființat în primăvara anului 2017, în cadrul implementării proiectului
+                                        „Comunicarea prin tradiții populare: menire educațională și angajament continuu
+                                        al actorilor comunitari”. <br>
+                                        Pe parcursul activității Ansamblul folcloric a fost
+                                        menționat cu diplome de merit pentru participare activă în promovarea
+                                        tradițiilor naționale la festivalurile locale și raionale, precum:</h3>
+                                    </p>
+                                    <ul>
+                                        <li>Festivalul cu genericul „PREACURATĂ-I FAȚA PÂINII...” Ediția a IV – 2018, s.Taraclia, r-l Căușeni.</li>
+                                        <li>1 decembrie 2018, Ziua națională a României; orașul Balan județul Harghita,
+                                            România.</li>
+                                        <li>Festivalul cu genericul „PREACURATĂ-I FAȚA PÂINII.” Ediția a VII – 2022,
+                                            s. Taraclia, r-l Căușeni.</li>
+                                        <li>Festivalul cu genericul „TOAMNA DE CHIHLIMBAR”, Căușeni 2022.</li>
+                                        <li> Campania „Te vezi realizat acasă” implementată de Atelierul de producție video și
+                                            educație media TeVezi în cadrul
+                                            proiectului „Joboteca” program pilot de pregătire a tinerilor din Moldova
+                                            pentru piața muncii 2021-2024.</li>
+                                        <li>Festivalul cântecului pascal „HRISTOS A ÎNVIAT”, 18 aprilie 2023, Căușeni.
+                                        </li>
+                                        <li>Festivalul „La seceriș”, satul Cîrnățeni raionul Căușeni, 30 iulie 2023.
+                                        </li>
+                                        <li>Festivalul cu genericul „TOAMNA DE CHIHLIMBAR”, Căușeni 2023.</li>
+                                    </ul>
+
+                                    <div class="images-container">
+                                        <img src="../images/IMG-343b189baf42a0ca002b08a7fb6fae3f-V.jpg"
+                                            class="hover-zoom image-right adapt" alt="Image 1">
+                                        <img src="../images/IMG-0b9aa6078563851c9c1249dbbdf77574-V.jpg"
+                                            class="hover-zoom image-left adapt" alt="Image 2">
                                     </div>
                                 </div>
-                                <button class="submit-btn" type="button" onclick="sendEmail()">
-                                    Trimite Mesajul
-                                </button>
-                            </div>
-                        </form>
-                        
+                                <br>
+                                <br>
+                                                    <center> <iframe width="771" height="434"
+                                        src="https://www.youtube.com/embed/ZO5piU8zA5k"
+                                        title="Te vezi realizat acasă! Fîrlădeni, acolo unde offline-urile tinerilor sunt șezători cu tradiții."
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen></iframe> </center>
+                            </section>
+                        </div>
                     </div>
-
                 </div>
-                
             </div>
-            
         </div>
-
     </div>
 
     <footer class="footer">
@@ -353,7 +363,6 @@
         <ul class="social-icon">
             <li class="social-icon__item"><a class="social-icon__link" href="#"><ion-icon
                         name="logo-facebook"></ion-icon></a></li>
-
             <li class="social-icon__item"><a class="social-icon__link" href="#"><ion-icon
                         name="logo-twitter"></ion-icon></a></li>
             <li class="social-icon__item"><a class="social-icon__link" href="#"><ion-icon
@@ -365,52 +374,19 @@
             <li class="menu__item"><a class="menu__link" href="../index.html">ACASĂ</a></li>
             <li class="menu__item"><a class="menu__link" href="../index.html">DESPRE</a></li>
             <li class="menu__item"><a class="menu__link" href="./proiecte.html">PROIECTE</a></li>
-            <li class="menu__item"><a class="menu__link" href="./partner.html">TEZAUR CULTURAL</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">CONTACTE</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">TEZAUR CULTURAL</a></li>
+            <li class="menu__item"><a class="menu__link" href="./contacte.html">CONTACTE</a></li>
         </ul>
-        <p>&copy;2024 ”PROFEMINA” | Fîrlădeni</p>
+        <p>&copy;2024 PRO FEMINA | ”Fîrlădeni”</p>
     </footer>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule
-        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
     <script>
         function toggleMenu() {
             var menu = document.querySelector('.navbar ul');
             menu.classList.toggle('show');
-        }
-
-        function sendEmail() {
-            emailjs.init("G8kvW5peVV5gc0WAn");
-            var form = document.getElementById("myForm");
-            var inputs = form.querySelectorAll('input');
-            for (var i = 0; i < inputs.length; i++) {
-                if (!inputs[i].value.trim()) {
-                    alert("Completați toată ancheta.");
-                    return false;
-                }
-            }
-
-            var textarea = form.querySelector('textarea');
-            if (!textarea.value.trim()) {
-                alert("Completați toată ancheta.");
-                return false;
-            }
-            emailjs.sendForm("service_7ttb51o", "template_tg003pi", form)
-                .then(
-                    function (response) {
-                        console.log("Trimitere cu succes:", response);
-                        window.location.reload();
-
-                    },
-                    function (error) {
-                        console.log("Trimitere eșuată:", error);
-
-                    }
-                );
-
-            return false; // trimitere ura
         }
     </script>
 
